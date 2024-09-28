@@ -10,8 +10,10 @@ print(f"b is {b}")
 
 # @TASK: What does that output? And why? Take a guess, then
 # run the code and see.
-
+# 20
 # Was it what you expected?
-
+# yes
 # Try to puzzle it out, and then move on to
 # 020_state_tables.py
+
+# Done!
