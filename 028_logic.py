@@ -60,7 +60,7 @@ print("Function: a_and_b")
 
 def a_and_b(a, b):
   # return a ?? b
-  pass
+  return a and b
 
 check_that_these_are_equal(a_and_b(True, True), True)
 check_that_these_are_equal(a_and_b(True, False), False)
@@ -76,10 +76,12 @@ print("Function: not_a")
 # goes first, and the value second.
 def not_a(a):
   # return ?? a
-  pass
+  return not a
 
 check_that_these_are_equal(not_a(True), False)
 check_that_these_are_equal(not_a(False), True)
 
 # Perhaps you could have guessed those... but now you know
 # for sure! When you're done, move on to 029_lists.py
+
+# Done!
