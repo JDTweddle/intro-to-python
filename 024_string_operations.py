@@ -15,7 +15,7 @@ from lib.helpers import check_that_these_are_equal
 
 # Here's an example:
 
-length = len("Hello!")
+length = len("KwaZuluNatal")
 print(f"The string is {length} characters long")
 
 # @TASK: Try it out yourself by changing the string "Hello!"
@@ -42,7 +42,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a
 # different place. Let's compare `len` and `replace`:
@@ -80,7 +80,7 @@ print("Function: uppercase")
 
 def make_uppercase(string):
   # Return the string in uppercase
-  pass
+  return string.upper()
 
 check_that_these_are_equal(
   make_uppercase("hello"), "HELLO")
@@ -97,7 +97,7 @@ print("Function: lowercase")
 
 def make_lowercase(string):
   # Return the string in lowercase
-  pass
+  return string.lower()
 
 check_that_these_are_equal(
   make_lowercase("HELLO"), "hello")
@@ -115,7 +115,7 @@ print("Function: strip_whitespace")
 def strip_whitespace(string):
   # Return the string with any whitespace removed from
   # the start and end
-  pass
+  return string.strip()
 
 check_that_these_are_equal(
   strip_whitespace("hello "), "hello")
@@ -124,3 +124,5 @@ check_that_these_are_equal(
   strip_whitespace(" hello world "), "hello world")
 
 # When you're done, move on to 025_string_concatenation.py
+
+# Done!

@@ -58,7 +58,7 @@ print("Function: greet")
 def greet(name):
 	# Return the string "Hello, Kay!" where "Kay" is the
 	# name provided
-	pass
+	return (f"Hello, {name}!")
 
 check_that_these_are_equal(
 	greet("Chuang-tzu"),
@@ -71,3 +71,5 @@ check_that_these_are_equal(
 )
 
 # When you're done, move on to 026_ifs.py
+
+# Done!
