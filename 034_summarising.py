@@ -42,7 +42,7 @@ print(text)
 
 another_text = "\n".join(lines)
 # Uncomment this next line if you want to see it
-# print(another_text)
+print(another_text)
 
 # `join` is actually little smarter — it only adds the `\n`
 # character between lines, not at the end also.
@@ -54,7 +54,10 @@ print("Function: add_up_numbers")
 
 # Add up all the numbers in the list
 def add_up_numbers(numbers):
-  pass
+  sum = 0
+  for num in numbers:
+    sum = sum + num
+  return sum
 
 check_that_these_are_equal(
   add_up_numbers([1, 2, 3, 4]), 10)
@@ -62,3 +65,5 @@ check_that_these_are_equal(
   add_up_numbers([2, 3, 4, 5]), 14)
 
 # When you're done, move on to 035_mapping.py
+
+# Done!
