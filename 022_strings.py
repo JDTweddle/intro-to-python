@@ -21,7 +21,7 @@ my_name = 'Kay'
 
 # Try out creating a string with your name in it:
 
-your_name = ???
+your_name = 'John'
 print(your_name)
 
 # @TASK: Check your work by running this file with:
@@ -31,3 +31,5 @@ print(your_name)
 # prints a string to the shell so you can see it.
 
 # When you're satisfied, move on to 023_string_indexing.py
+
+# Done!
