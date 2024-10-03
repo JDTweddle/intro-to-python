@@ -27,10 +27,30 @@ from lib.helpers import check_that_these_are_equal
 # @TASK: Complete this exercise.
 
 print("")
-print("Function: report_long_words")
+print("Function: report_long_words") 
 
 def report_long_words(words):
-  pass
+  longer_than_ten_no_hyphen = filter_longer_than_ten_and_no_hyphen(words)
+  longer_than_fifteen = modify_longer_than_fifteen(longer_than_ten_no_hyphen)
+  report = ', '.join(longer_than_fifteen)
+  return f"These words are quite long: {report}"
+
+def filter_longer_than_ten_and_no_hyphen(words):
+  longer_than_ten_no_hyphen = []
+  for word in words:
+    if len(word) > 10 and '-' not in word:
+      longer_than_ten_no_hyphen.append(word)
+  return longer_than_ten_no_hyphen
+
+def modify_longer_than_fifteen(words):
+  longer_than_fifteen = []
+  for word in words:
+    if len(word) > 15:
+      truncated_word = word[:15] + '...'
+      longer_than_fifteen.append(truncated_word)
+    else:
+       longer_than_fifteen.append(word)
+  return longer_than_fifteen
 
 check_that_these_are_equal(
   report_long_words([

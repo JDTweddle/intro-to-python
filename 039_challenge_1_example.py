@@ -19,7 +19,7 @@
 # * Creates a graph of how frequently each number shows up
 #
 # If you've not used the videos so far, you might want to
-# do so for this one. It will show you how I build up the
+# do so for this one. It will show you how I build up the1
 # program piece by piece.
 
 example_numbers = [1, 2, 3, -2, -2, 2, None, -3, 4, 4, None, 3, 3, 2, 2, 1]
@@ -88,3 +88,5 @@ print(generate_frequency_graph(example_numbers))
 # @TASK Run this file to see the result.
 
 # Once you're done, move on to 040_challenge_1_exercise.py
+
+# Done!
